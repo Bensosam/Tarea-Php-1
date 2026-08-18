@@ -1,0 +1,3915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP por Informe de Escaneo Checkmarx</title>
+<link
+	href="2026-08-17-ZAP-Report-localhost3/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2026-08-17-ZAP-Report-localhost3/themes/original/main.css" rel="stylesheet">
+<link
+	href="2026-08-17-ZAP-Report-localhost3/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP por Informe de Escaneo Checkmarx</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2026-08-17-ZAP-Report-localhost3/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on lun 17 ago 2026, at 18:24:46</span>
+		</p>
+		<p>ZAP Versión: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Alto</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(4)</span></a></li>
+							
+							
+							
+							
+							  
+							 
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baja</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Medio</span>, <span class="risk-level">Bajo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span>, <span class="confidence-level">Falso positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">Confirmado por Usuario</th>
+							<th scope="col">Alta</th>
+							<th scope="col">Media</th>
+							<th scope="col">Baja</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(14,3 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57,1 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(57,1 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Bajo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3 %)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(28,6 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57,1 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14,3 %)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Medio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medio)</span> 
+							</th>
+							<th scope="col">
+								<span>Bajo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Bajo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Inyección SQL</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">CSP: Failure to Define Directive with No Fallback</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57,1 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">CSP: script-src unsafe-inline</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57,1 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">CSP: style-src unsafe-inline</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57,1 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cabecera Content Security Policy (CSP) no configurada</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Atributo de elemento HTML controlable por el usuario (XSS potencial)</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Respuesta de Gestión de Sesión Identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28,6 %)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>7</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Razón</th>
+						<th scope="col">Site</th>
+						<th scope="col">Descripción</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Bajo</div>
+						</td>
+						<td>
+							<div>Advertencia</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP errors logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>1   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>66 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>33 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>18 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>83 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method POST</div>
+						</td>
+						<td align="center">
+							<div>16 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>6   </div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Alto</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Inyección SQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/php_empresa-main/index.php?pagina=1+AND+1%3D1+--+</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					 <span>POLICY_SEQUENCE = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance">PCI_DSS</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_CICD = </span>
+				</li>
+				<li>
+					 <span>POLICY_DEV_CICD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A05_2025-Injection/">OWASP_2025_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_API = </span>
+				</li>
+				<li>
+					 <span>POLICY_DEV_FULL = </span>
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance">HIPAA</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/API-Security/editions/2023/en/0xaa-unsafe-consumption-of-apis/">API_2023_API10</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Inyección SQL puede ser posible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Los resultados de la página fueron manipulados con éxito utilizando las condiciones booleanas [1 AND 1=1 -- ] y [1 AND 1=2 -- ]. </p>
+
+<p>El valor del parámetro modificado fue , que fue eliminado del HTML para facilitar la comparación.</p>
+
+<p>Se devolvieron datos para el parámetro original. </p>
+
+<p>La vulnerabilidad se detectó al restringir con éxito los datos que se devolvían originalmente, manipulando el parámetro.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (377 bytes)</summary>
+				
+				<pre><code>GET http://localhost/php_empresa-main/index.php?pagina=1+AND+1%3D1+--+ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/php_empresa-main/index.php?pagina=2
+Cookie: PHPSESSID=f8o0hv9fmn3ssbm04015gasnrd
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (591 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 18 Aug 2026 00:19:12 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+content-length: 28412
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (28412 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, initial-scale=1&quot;
+&gt;
+&lt;title&gt;Gestión de empleados&lt;/title&gt;
+&lt;link
+    href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot;
+    rel=&quot;stylesheet&quot;
+    integrity=&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN&quot;
+    crossorigin=&quot;anonymous&quot;
+&gt;
+&lt;style&gt;
+body {
+    background-color: #f4f6f9;
+}
+.page-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+.card {
+    border: 0;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+}
+.table tbody tr {
+    cursor: pointer;
+}
+.table tbody tr:hover {
+    background-color: #eef4ff;
+}
+.required::after {
+    content: &quot; *&quot;;
+    color: #dc3545;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header class=&quot;page-header py-4 mb-4&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3&quot;&gt;
+            &lt;div&gt;
+                &lt;h1 class=&quot;h3 mb-1&quot;&gt;Gestión de empleados&lt;/h1&gt;
+                &lt;p class=&quot;text-secondary mb-0&quot;&gt;
+                    Agregue, modifique o elimine registros de empleados.
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;button
+                type=&quot;button&quot;
+                id=&quot;btn_nuevo&quot;
+                class=&quot;btn btn-primary&quot;
+            &gt;
+                Nuevo empleado
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+&lt;main class=&quot;container pb-5&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header bg-white py-3&quot;&gt;
+            &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2&quot;&gt;
+                &lt;h2 class=&quot;h5 mb-0&quot;&gt;Listado de empleados&lt;/h2&gt;
+                &lt;form
+                    class=&quot;d-flex&quot;
+                    method=&quot;get&quot;
+                    action=&quot;index.php&quot;
+                    role=&quot;search&quot;
+                &gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;pagina&quot; value=&quot;1&quot;&gt;
+                    &lt;input
+                        type=&quot;search&quot;
+                        name=&quot;buscar&quot;
+                        id=&quot;txt_buscar&quot;
+                        class=&quot;form-control&quot;
+                        style=&quot;max-width: 320px;&quot;
+                        placeholder=&quot;Buscar empleado...&quot;
+                        aria-label=&quot;Buscar empleado&quot;
+                        value=&quot;&quot;
+                    &gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-outline-secondary ms-2&quot;&gt;
+                        Buscar
+                    &lt;/button&gt;
+                                    &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body p-0&quot;&gt;
+            &lt;div class=&quot;table-responsive&quot;&gt;
+                &lt;table class=&quot;table table-hover align-middle mb-0&quot;&gt;
+                    &lt;thead class=&quot;table-dark&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Código&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Nombres&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Apellidos&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Dirección&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Teléfono&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Nacimiento&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Puesto&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Creado&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Modificado&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody id=&quot;tbl_empleados&quot;&gt;
+                                                                                &lt;tr
+                                data-id=&quot;11&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;22&quot;
+                                data-nombres=&quot;pruebaJ&quot;
+                                data-apellidos=&quot;pruebaJ&quot;
+                                data-direccion=&quot;ultima prueba de paginacion&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2009-11-12&quot;
+                            &gt;
+                                &lt;td&gt;22&lt;/td&gt;
+                                &lt;td&gt;pruebaJ&lt;/td&gt;
+                                &lt;td&gt;pruebaJ&lt;/td&gt;
+                                &lt;td&gt;ultima prueba de paginacion&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2009-11-12&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:25&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:25&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;10&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;21&quot;
+                                data-nombres=&quot;pruebaI&quot;
+                                data-apellidos=&quot;pruebaI&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-07-17&quot;
+                            &gt;
+                                &lt;td&gt;21&lt;/td&gt;
+                                &lt;td&gt;pruebaI&lt;/td&gt;
+                                &lt;td&gt;pruebaI&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-07-17&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;9&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;20&quot;
+                                data-nombres=&quot;pruebaH&quot;
+                                data-apellidos=&quot;pruebaH&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-04-10&quot;
+                            &gt;
+                                &lt;td&gt;20&lt;/td&gt;
+                                &lt;td&gt;pruebaH&lt;/td&gt;
+                                &lt;td&gt;pruebaH&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-04-10&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;8&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;19&quot;
+                                data-nombres=&quot;pruebaG&quot;
+                                data-apellidos=&quot;pruebaG&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-05-15&quot;
+                            &gt;
+                                &lt;td&gt;19&lt;/td&gt;
+                                &lt;td&gt;pruebaG&lt;/td&gt;
+                                &lt;td&gt;pruebaG&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-05-15&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;7&quot;
+                                data-id-puesto=&quot;3&quot;
+                                data-codigo=&quot;18&quot;
+                                data-nombres=&quot;PruebaF&quot;
+                                data-apellidos=&quot;PruebaF&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-06-11&quot;
+                            &gt;
+                                &lt;td&gt;18&lt;/td&gt;
+                                &lt;td&gt;PruebaF&lt;/td&gt;
+                                &lt;td&gt;PruebaF&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-06-11&lt;/td&gt;
+                                &lt;td&gt;Calidad&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;6&quot;
+                                data-id-puesto=&quot;3&quot;
+                                data-codigo=&quot;17&quot;
+                                data-nombres=&quot;pruebaE&quot;
+                                data-apellidos=&quot;pruebaE&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-06-19&quot;
+                            &gt;
+                                &lt;td&gt;17&lt;/td&gt;
+                                &lt;td&gt;pruebaE&lt;/td&gt;
+                                &lt;td&gt;pruebaE&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-06-19&lt;/td&gt;
+                                &lt;td&gt;Calidad&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;5&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;16&quot;
+                                data-nombres=&quot;pruebaD&quot;
+                                data-apellidos=&quot;pruebaD&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-07-10&quot;
+                            &gt;
+                                &lt;td&gt;16&lt;/td&gt;
+                                &lt;td&gt;pruebaD&lt;/td&gt;
+                                &lt;td&gt;pruebaD&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-07-10&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;4&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;15&quot;
+                                data-nombres=&quot;pruebaC&quot;
+                                data-apellidos=&quot;pruebaC&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-08-03&quot;
+                            &gt;
+                                &lt;td&gt;15&lt;/td&gt;
+                                &lt;td&gt;pruebaC&lt;/td&gt;
+                                &lt;td&gt;pruebaC&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-08-03&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:21&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:21&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                                        &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-footer bg-white&quot;&gt;
+            &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2&quot;&gt;
+                &lt;div class=&quot;text-secondary small&quot;&gt;
+                    Seleccione una fila para modificar o eliminar un empleado.
+                    Total de registros: &lt;strong&gt;11&lt;/strong&gt;
+                &lt;/div&gt;
+                &lt;nav aria-label=&quot;Paginación de empleados&quot;&gt;
+                    &lt;ul class=&quot;pagination pagination-sm mb-0&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a
+                                class=&quot;page-link&quot;
+                                href=&quot;index.php?pagina=0&quot;
+                            &gt;
+                                Anterior
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;span class=&quot;page-link&quot;&gt;
+                                Página 1 de 2                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item &quot;&gt;
+                            &lt;a
+                                class=&quot;page-link&quot;
+                                href=&quot;index.php?pagina=2&quot;
+                            &gt;
+                                Siguiente
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+
+&lt;div
+    class=&quot;modal fade&quot;
+    id=&quot;modal_empleados&quot;
+    tabindex=&quot;-1&quot;
+    aria-labelledby=&quot;titulo_modal_empleados&quot;
+    aria-hidden=&quot;true&quot;
+&gt;
+    &lt;div class=&quot;modal-dialog modal-dialog-centered modal-xl&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;form
+                id=&quot;form_empleados&quot;
+                class=&quot;needs-validation&quot;
+                action=&quot;crud_empleado.php&quot;
+                method=&quot;post&quot;
+                novalidate
+            &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;csrf_token&quot;
+                    value=&quot;f31c552ef20a6774db856d829d197c0c4435db0ae160fcb1b7e8af2b3d39182c&quot;
+                &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;pagina_actual&quot;
+                    value=&quot;1&quot;
+                &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;buscar_actual&quot;
+                    value=&quot;&quot;
+                &gt;
+                &lt;div class=&quot;modal-header&quot;&gt;
+                    &lt;div&gt;
+                        &lt;h2
+                            class=&quot;modal-title fs-5&quot;
+                            id=&quot;titulo_modal_empleados&quot;
+                        &gt;
+                            Nuevo empleado
+                        &lt;/h2&gt;
+                        &lt;small class=&quot;text-secondary&quot;&gt;
+                            Los campos marcados con * son obligatorios.
+                        &lt;/small&gt;
+                    &lt;/div&gt;
+                    &lt;button
+                        type=&quot;button&quot;
+                        class=&quot;btn-close&quot;
+                        data-bs-dismiss=&quot;modal&quot;
+                        aria-label=&quot;Cerrar&quot;
+                    &gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-body&quot;&gt;
+                    &lt;div class=&quot;row g-3&quot;&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label for=&quot;txt_id&quot; class=&quot;form-label&quot;&gt;
+                                ID
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;number&quot;
+                                name=&quot;txt_id&quot;
+                                id=&quot;txt_id&quot;
+                                class=&quot;form-control&quot;
+                                value=&quot;0&quot;
+                                readonly
+                            &gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_codigo&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Código
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_codigo&quot;
+                                id=&quot;txt_codigo&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: E001&quot;
+                                maxlength=&quot;10&quot;
+                                pattern=&quot;[A-Za-z0-9-]{2,10}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Código válido.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese un código de 2 a 10 caracteres usando letras, números o guiones.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_nombres&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Nombres
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_nombres&quot;
+                                id=&quot;txt_nombres&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: Ana Lucía&quot;
+                                maxlength=&quot;60&quot;
+                                minlength=&quot;2&quot;
+                                pattern=&quot;[A-Za-zÁÉÍÓÚÜÑáéíóúüñ&#39;\-\s]{2,60}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Nombres válidos.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese solamente letras y espacios para los nombres.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_apellidos&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Apellidos
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_apellidos&quot;
+                                id=&quot;txt_apellidos&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: López Pérez&quot;
+                                maxlength=&quot;60&quot;
+                                minlength=&quot;2&quot;
+                                pattern=&quot;[A-Za-zÁÉÍÓÚÜÑáéíóúüñ&#39;\-\s]{2,60}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Apellidos válidos.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese solamente letras y espacios para los apellidos.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_direccion&quot;
+                                class=&quot;form-label&quot;
+                            &gt;
+                                Dirección
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_direccion&quot;
+                                id=&quot;txt_direccion&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: Zona 1, Ciudad&quot;
+                                maxlength=&quot;100&quot;
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Dirección válida.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Revise la dirección ingresada.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_telefono&quot;
+                                class=&quot;form-label&quot;
+                            &gt;
+                                Teléfono
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;tel&quot;
+                                name=&quot;txt_telefono&quot;
+                                id=&quot;txt_telefono&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: 55551234&quot;
+                                maxlength=&quot;8&quot;
+                                minlength=&quot;8&quot;
+                                pattern=&quot;[0-9]{8}&quot;
+                                inputmode=&quot;numeric&quot;
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Teléfono válido.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese un número de teléfono de 8 dígitos.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_fn&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Fecha de nacimiento
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;date&quot;
+                                name=&quot;txt_fn&quot;
+                                id=&quot;txt_fn&quot;
+                                class=&quot;form-control&quot;
+                                max=&quot;2026-08-18&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Fecha válida.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Seleccione una fecha de nacimiento válida (no puede ser futura).
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;label
+                                for=&quot;drop_puesto&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Puesto
+                            &lt;/label&gt;
+                            &lt;select
+                                class=&quot;form-select&quot;
+                                name=&quot;drop_puesto&quot;
+                                id=&quot;drop_puesto&quot;
+                                required
+                            &gt;
+                                &lt;option value=&quot;&quot; selected disabled&gt;
+                                    Seleccione un puesto
+                                &lt;/option&gt;
+                                                                &lt;option value=&quot;2&quot;&gt;
+                                    Analista                                &lt;/option&gt;
+                                                                &lt;option value=&quot;3&quot;&gt;
+                                    Calidad                                &lt;/option&gt;
+                                                                &lt;option value=&quot;1&quot;&gt;
+                                    Programador                                &lt;/option&gt;
+                                                            &lt;/select&gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Puesto seleccionado.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Seleccione un puesto válido.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-footer&quot;&gt;
+                    &lt;button
+                        type=&quot;button&quot;
+                        class=&quot;btn btn-outline-secondary&quot;
+                        data-bs-dismiss=&quot;modal&quot;
+                    &gt;
+                        Cancelar
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_eliminar&quot;
+                        id=&quot;btn_eliminar&quot;
+                        class=&quot;btn btn-danger d-none&quot;
+                        formnovalidate
+                    &gt;
+                        Eliminar
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_modificar&quot;
+                        id=&quot;btn_modificar&quot;
+                        class=&quot;btn btn-success d-none&quot;
+                    &gt;
+                        Guardar cambios
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_agregar&quot;
+                        id=&quot;btn_agregar&quot;
+                        class=&quot;btn btn-primary&quot;
+                    &gt;
+                        Agregar empleado
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script
+    src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js&quot;
+    integrity=&quot;sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL&quot;
+    crossorigin=&quot;anonymous&quot;
+&gt;&lt;/script&gt;
+&lt;script&gt;
+&quot;use strict&quot;;
+
+const modalElemento = document.getElementById(&quot;modal_empleados&quot;);
+const modalEmpleados = new bootstrap.Modal(modalElemento);
+const formulario = document.getElementById(&quot;form_empleados&quot;);
+const tituloModal = document.getElementById(&quot;titulo_modal_empleados&quot;);
+const btnNuevo = document.getElementById(&quot;btn_nuevo&quot;);
+const btnAgregar = document.getElementById(&quot;btn_agregar&quot;);
+const btnModificar = document.getElementById(&quot;btn_modificar&quot;);
+const btnEliminar = document.getElementById(&quot;btn_eliminar&quot;);
+const tablaEmpleados = document.getElementById(&quot;tbl_empleados&quot;);
+
+function prepararNuevoEmpleado() {
+    formulario.reset();
+    formulario.classList.remove(&quot;was-validated&quot;);
+    document.getElementById(&quot;txt_id&quot;).value = 0;
+    tituloModal.textContent = &quot;Nuevo empleado&quot;;
+    btnAgregar.classList.remove(&quot;d-none&quot;);
+    btnModificar.classList.add(&quot;d-none&quot;);
+    btnEliminar.classList.add(&quot;d-none&quot;);
+    modalEmpleados.show();
+}
+
+function prepararEdicionEmpleado(fila) {
+    formulario.classList.remove(&quot;was-validated&quot;);
+    document.getElementById(&quot;txt_id&quot;).value = fila.dataset.id;
+    document.getElementById(&quot;txt_codigo&quot;).value = fila.dataset.codigo;
+    document.getElementById(&quot;txt_nombres&quot;).value = fila.dataset.nombres;
+    document.getElementById(&quot;txt_apellidos&quot;).value = fila.dataset.apellidos;
+    document.getElementById(&quot;txt_direccion&quot;).value = fila.dataset.direccion;
+    document.getElementById(&quot;txt_telefono&quot;).value = fila.dataset.telefono;
+    document.getElementById(&quot;txt_fn&quot;).value = fila.dataset.nacimiento;
+    document.getElementById(&quot;drop_puesto&quot;).value = fila.dataset.idPuesto;
+    tituloModal.textContent = &quot;Editar empleado&quot;;
+    btnAgregar.classList.add(&quot;d-none&quot;);
+    btnModificar.classList.remove(&quot;d-none&quot;);
+    btnEliminar.classList.remove(&quot;d-none&quot;);
+    modalEmpleados.show();
+}
+
+btnNuevo.addEventListener(&quot;click&quot;, prepararNuevoEmpleado);
+
+tablaEmpleados.addEventListener(&quot;click&quot;, function (evento) {
+    const fila = evento.target.closest(&quot;tr[data-id]&quot;);
+    if (fila) {
+        prepararEdicionEmpleado(fila);
+    }
+});
+
+formulario.addEventListener(&quot;submit&quot;, function (evento) {
+    const botonPresionado = evento.submitter;
+
+    /*
+     * La eliminación solamente necesita un ID válido.
+     * Los demás campos no se validan para esta operación.
+     */
+    if (
+        botonPresionado &amp;&amp;
+        botonPresionado.name === &quot;btn_eliminar&quot;
+    ) {
+        return;
+    }
+
+    if (!formulario.checkValidity()) {
+        evento.preventDefault();
+        evento.stopPropagation();
+    }
+
+    formulario.classList.add(&quot;was-validated&quot;);
+});
+
+btnEliminar.addEventListener(&quot;click&quot;, function (evento) {
+    const confirmar = window.confirm(
+        &quot;¿Está seguro de que desea eliminar este empleado?&quot;
+    );
+    if (!confirmar) {
+        evento.preventDefault();
+    }
+});
+
+modalElemento.addEventListener(&quot;shown.bs.modal&quot;, function () {
+    document.getElementById(&quot;txt_codigo&quot;).focus();
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>pagina</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>1 AND 1=1 -- </code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>No confíe en los datos de entrada del lado del cliente, incluso si existe una validación del lado del cliente.</p>
+
+<p>Como norma general, escriba la verificación de los datos en el lado del servidor.</p>
+
+<p>Si la aplicación usa JDBC, use PreparedStatement o CallableStatement, con parámetros pasados ​​por &#39;?&#39;</p>
+
+<p>Si la aplicación usa ASP, use objetos de comando ADO con verificación de tipo fuerte y consultas parametrizadas.</p>
+
+<p>Si se pueden usar los procedimientos almacenados de la base de datos, utilícelos.</p>
+
+<p>¡*No* concatene cadenas en consultas en el procedimiento almacenado, o use &#39;exec&#39;, &#39;exex immediate&#39; o una función equivalente!</p>
+
+<p>No cree consultas SQL dinámicas mediante la concatenación de cadenas simples.</p>
+
+<p>Escape todos los datos recibidos del cliente.</p>
+
+<p>Aplique una &#39;lista de permitidos&#39; para caracteres permitidos o una &#39;lista de denegados&#39; para caracteres no permitidos en la entrada del usuario.</p>
+
+<p>Aplique el principio de privilegio mínimo utilizando el usuario de base de datos con el menor privilegio posible.</p>
+
+<p>En particular, evite utilizar usuarios de bases de datos &#39;sa&#39; o &#39;db-owner&#39;. Esto no elimina la inyección SQL, pero minimiza su impacto.</p>
+
+<p>Otorgue el acceso mínimo a la base de datos que sea necesario para la aplicación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">CSP: Failure to Define Directive with No Fallback</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/php_empresa-main/crud_empleado.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The directive(s): form-action is/are among the directives that do not fallback to default-src.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (433 bytes)</summary>
+				
+				<pre><code>POST http://localhost/php_empresa-main/crud_empleado.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/php_empresa-main/index.php?pagina=2
+content-length: 238
+Cookie: PHPSESSID=f8o0hv9fmn3ssbm04015gasnrd
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (238 bytes)</summary>
+				
+				<pre><code>csrf_token=f31c552ef20a6774db856d829d197c0c4435db0ae160fcb1b7e8af2b3d39182c&amp;pagina_actual=2&amp;buscar_actual=&amp;txt_id=0&amp;txt_codigo=ZAP&amp;txt_nombres=ZAP&amp;txt_apellidos=ZAP&amp;txt_direccion=ZAP&amp;txt_telefono=9999999999&amp;txt_fn=2026-08-17&amp;drop_puesto=2</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (620 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Tue, 18 Aug 2026 00:18:58 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: index.php?pagina=2
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Content-Security-Policy</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicación, balanceador de carga, etc. está configurado apropiadamente para establecer la cabecera de Política de Seguridad de Contenido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">CSP: script-src unsafe-inline</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/php_empresa-main/crud_empleado.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) es una capa de seguridad añadida que ayuda a detectar y mitigar ciertos tipos de ataques. Incluyendo (pero no limitado a) Cross Site Scripting (XSS), y ataques de inyección de datos. Estos ataques se utilizan, para todo, desde el robo de datos a la desfiguración de sitios o la distribución de malware. CSP proporciona un conjunto de cabeceras HTTP estándar que permiten a los propietarios de sitios web declarar las fuentes de contenido aprobadas que los navegadores deberían poder cargar en esa página. Los tipos cubiertos son JavaScript, CSS, marcos HTML, fuentes, imágenes y objetos incrustables como applets Java, ActiveX y archivos de audio y vídeo.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>script-src incluye unsafe-inline.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (433 bytes)</summary>
+				
+				<pre><code>POST http://localhost/php_empresa-main/crud_empleado.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/php_empresa-main/index.php?pagina=2
+content-length: 238
+Cookie: PHPSESSID=f8o0hv9fmn3ssbm04015gasnrd
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (238 bytes)</summary>
+				
+				<pre><code>csrf_token=f31c552ef20a6774db856d829d197c0c4435db0ae160fcb1b7e8af2b3d39182c&amp;pagina_actual=2&amp;buscar_actual=&amp;txt_id=0&amp;txt_codigo=ZAP&amp;txt_nombres=ZAP&amp;txt_apellidos=ZAP&amp;txt_direccion=ZAP&amp;txt_telefono=9999999999&amp;txt_fn=2026-08-17&amp;drop_puesto=2</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (620 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Tue, 18 Aug 2026 00:18:58 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: index.php?pagina=2
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Content-Security-Policy</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicación, balanceador de carga, etc. está configurado apropiadamente para establecer la cabecera de Política de Seguridad de Contenido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">CSP: style-src unsafe-inline</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/php_empresa-main/crud_empleado.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) es una capa de seguridad añadida que ayuda a detectar y mitigar ciertos tipos de ataques. Incluyendo (pero no limitado a) Cross Site Scripting (XSS), y ataques de inyección de datos. Estos ataques se utilizan, para todo, desde el robo de datos a la desfiguración de sitios o la distribución de malware. CSP proporciona un conjunto de cabeceras HTTP estándar que permiten a los propietarios de sitios web declarar las fuentes de contenido aprobadas que los navegadores deberían poder cargar en esa página. Los tipos cubiertos son JavaScript, CSS, marcos HTML, fuentes, imágenes y objetos incrustables como applets Java, ActiveX y archivos de audio y vídeo.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>style-src incluye unsafe-inline.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (433 bytes)</summary>
+				
+				<pre><code>POST http://localhost/php_empresa-main/crud_empleado.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/php_empresa-main/index.php?pagina=0
+content-length: 238
+Cookie: PHPSESSID=f8o0hv9fmn3ssbm04015gasnrd
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (238 bytes)</summary>
+				
+				<pre><code>csrf_token=f31c552ef20a6774db856d829d197c0c4435db0ae160fcb1b7e8af2b3d39182c&amp;pagina_actual=1&amp;buscar_actual=&amp;txt_id=0&amp;txt_codigo=ZAP&amp;txt_nombres=ZAP&amp;txt_apellidos=ZAP&amp;txt_direccion=ZAP&amp;txt_telefono=9999999999&amp;txt_fn=2026-08-17&amp;drop_puesto=2</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (620 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Tue, 18 Aug 2026 00:18:58 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: index.php?pagina=1
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Content-Security-Policy</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicación, balanceador de carga, etc. está configurado apropiadamente para establecer la cabecera de Política de Seguridad de Contenido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cabecera Content Security Policy (CSP) no configurada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La Política de seguridad de contenido (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques, incluidos Cross Site Scripting (XSS) y ataques de inyección de datos. Estos ataques se utilizan para todo, desde el robo de datos hasta la desfiguración del sitio o la distribución de malware. CSP proporciona un conjunto de encabezados HTTP estándar que permiten a los propietarios de sitios web declarar fuentes de contenido aprobadas que los navegadores deberían poder cargar en esa página; los tipos cubiertos son JavaScript, CSS, marcos HTML, fuentes, imágenes y objetos incrustados como applets de Java, ActiveX, archivos de audio y video.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (229 bytes)</summary>
+				
+				<pre><code>GET http://localhost/robots.txt HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (145 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Tue, 18 Aug 2026 00:18:57 GMT
+Server: Apache
+Content-Length: 196
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (196 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicaciones, balanceador de carga, etc. esté configurado para establecer la cabecera Content-Security-Policy.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Respuesta de Gestión de Sesión Identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/php_empresa-main/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Se ha identificado que la respuesta dada contiene un token de gestión de sesión. El campo &#39;Other Info&#39; contiene un conjunto de tokens de cabecera que pueden utilizarse en el método Header Based Session Management (gestión de sesión basado en cabecera). Si la petición se encuentra en un contexto que tiene un método Session Management establecido en &quot;Auto-Detect&quot;, esta regla cambiará la gestión de sesión para utilizar los tokens identificados.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:PHPSESSID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (236 bytes)</summary>
+				
+				<pre><code>GET http://localhost/php_empresa-main/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (673 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 18 Aug 2026 00:18:57 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;
+Set-Cookie: PHPSESSID=smltakmfs4io23juck31ghh96i; path=/; HttpOnly; SameSite=Lax
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+content-length: 28412
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (28412 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, initial-scale=1&quot;
+&gt;
+&lt;title&gt;Gestión de empleados&lt;/title&gt;
+&lt;link
+    href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot;
+    rel=&quot;stylesheet&quot;
+    integrity=&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN&quot;
+    crossorigin=&quot;anonymous&quot;
+&gt;
+&lt;style&gt;
+body {
+    background-color: #f4f6f9;
+}
+.page-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+.card {
+    border: 0;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+}
+.table tbody tr {
+    cursor: pointer;
+}
+.table tbody tr:hover {
+    background-color: #eef4ff;
+}
+.required::after {
+    content: &quot; *&quot;;
+    color: #dc3545;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header class=&quot;page-header py-4 mb-4&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3&quot;&gt;
+            &lt;div&gt;
+                &lt;h1 class=&quot;h3 mb-1&quot;&gt;Gestión de empleados&lt;/h1&gt;
+                &lt;p class=&quot;text-secondary mb-0&quot;&gt;
+                    Agregue, modifique o elimine registros de empleados.
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;button
+                type=&quot;button&quot;
+                id=&quot;btn_nuevo&quot;
+                class=&quot;btn btn-primary&quot;
+            &gt;
+                Nuevo empleado
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+&lt;main class=&quot;container pb-5&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header bg-white py-3&quot;&gt;
+            &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2&quot;&gt;
+                &lt;h2 class=&quot;h5 mb-0&quot;&gt;Listado de empleados&lt;/h2&gt;
+                &lt;form
+                    class=&quot;d-flex&quot;
+                    method=&quot;get&quot;
+                    action=&quot;index.php&quot;
+                    role=&quot;search&quot;
+                &gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;pagina&quot; value=&quot;1&quot;&gt;
+                    &lt;input
+                        type=&quot;search&quot;
+                        name=&quot;buscar&quot;
+                        id=&quot;txt_buscar&quot;
+                        class=&quot;form-control&quot;
+                        style=&quot;max-width: 320px;&quot;
+                        placeholder=&quot;Buscar empleado...&quot;
+                        aria-label=&quot;Buscar empleado&quot;
+                        value=&quot;&quot;
+                    &gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-outline-secondary ms-2&quot;&gt;
+                        Buscar
+                    &lt;/button&gt;
+                                    &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body p-0&quot;&gt;
+            &lt;div class=&quot;table-responsive&quot;&gt;
+                &lt;table class=&quot;table table-hover align-middle mb-0&quot;&gt;
+                    &lt;thead class=&quot;table-dark&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Código&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Nombres&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Apellidos&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Dirección&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Teléfono&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Nacimiento&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Puesto&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Creado&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Modificado&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody id=&quot;tbl_empleados&quot;&gt;
+                                                                                &lt;tr
+                                data-id=&quot;11&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;22&quot;
+                                data-nombres=&quot;pruebaJ&quot;
+                                data-apellidos=&quot;pruebaJ&quot;
+                                data-direccion=&quot;ultima prueba de paginacion&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2009-11-12&quot;
+                            &gt;
+                                &lt;td&gt;22&lt;/td&gt;
+                                &lt;td&gt;pruebaJ&lt;/td&gt;
+                                &lt;td&gt;pruebaJ&lt;/td&gt;
+                                &lt;td&gt;ultima prueba de paginacion&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2009-11-12&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:25&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:25&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;10&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;21&quot;
+                                data-nombres=&quot;pruebaI&quot;
+                                data-apellidos=&quot;pruebaI&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-07-17&quot;
+                            &gt;
+                                &lt;td&gt;21&lt;/td&gt;
+                                &lt;td&gt;pruebaI&lt;/td&gt;
+                                &lt;td&gt;pruebaI&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-07-17&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;9&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;20&quot;
+                                data-nombres=&quot;pruebaH&quot;
+                                data-apellidos=&quot;pruebaH&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-04-10&quot;
+                            &gt;
+                                &lt;td&gt;20&lt;/td&gt;
+                                &lt;td&gt;pruebaH&lt;/td&gt;
+                                &lt;td&gt;pruebaH&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-04-10&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;8&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;19&quot;
+                                data-nombres=&quot;pruebaG&quot;
+                                data-apellidos=&quot;pruebaG&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-05-15&quot;
+                            &gt;
+                                &lt;td&gt;19&lt;/td&gt;
+                                &lt;td&gt;pruebaG&lt;/td&gt;
+                                &lt;td&gt;pruebaG&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-05-15&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;7&quot;
+                                data-id-puesto=&quot;3&quot;
+                                data-codigo=&quot;18&quot;
+                                data-nombres=&quot;PruebaF&quot;
+                                data-apellidos=&quot;PruebaF&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-06-11&quot;
+                            &gt;
+                                &lt;td&gt;18&lt;/td&gt;
+                                &lt;td&gt;PruebaF&lt;/td&gt;
+                                &lt;td&gt;PruebaF&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-06-11&lt;/td&gt;
+                                &lt;td&gt;Calidad&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;6&quot;
+                                data-id-puesto=&quot;3&quot;
+                                data-codigo=&quot;17&quot;
+                                data-nombres=&quot;pruebaE&quot;
+                                data-apellidos=&quot;pruebaE&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-06-19&quot;
+                            &gt;
+                                &lt;td&gt;17&lt;/td&gt;
+                                &lt;td&gt;pruebaE&lt;/td&gt;
+                                &lt;td&gt;pruebaE&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-06-19&lt;/td&gt;
+                                &lt;td&gt;Calidad&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;5&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;16&quot;
+                                data-nombres=&quot;pruebaD&quot;
+                                data-apellidos=&quot;pruebaD&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-07-10&quot;
+                            &gt;
+                                &lt;td&gt;16&lt;/td&gt;
+                                &lt;td&gt;pruebaD&lt;/td&gt;
+                                &lt;td&gt;pruebaD&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-07-10&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;4&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;15&quot;
+                                data-nombres=&quot;pruebaC&quot;
+                                data-apellidos=&quot;pruebaC&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-08-03&quot;
+                            &gt;
+                                &lt;td&gt;15&lt;/td&gt;
+                                &lt;td&gt;pruebaC&lt;/td&gt;
+                                &lt;td&gt;pruebaC&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-08-03&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:21&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:21&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                                        &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-footer bg-white&quot;&gt;
+            &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2&quot;&gt;
+                &lt;div class=&quot;text-secondary small&quot;&gt;
+                    Seleccione una fila para modificar o eliminar un empleado.
+                    Total de registros: &lt;strong&gt;11&lt;/strong&gt;
+                &lt;/div&gt;
+                &lt;nav aria-label=&quot;Paginación de empleados&quot;&gt;
+                    &lt;ul class=&quot;pagination pagination-sm mb-0&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a
+                                class=&quot;page-link&quot;
+                                href=&quot;index.php?pagina=0&quot;
+                            &gt;
+                                Anterior
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;span class=&quot;page-link&quot;&gt;
+                                Página 1 de 2                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item &quot;&gt;
+                            &lt;a
+                                class=&quot;page-link&quot;
+                                href=&quot;index.php?pagina=2&quot;
+                            &gt;
+                                Siguiente
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+
+&lt;div
+    class=&quot;modal fade&quot;
+    id=&quot;modal_empleados&quot;
+    tabindex=&quot;-1&quot;
+    aria-labelledby=&quot;titulo_modal_empleados&quot;
+    aria-hidden=&quot;true&quot;
+&gt;
+    &lt;div class=&quot;modal-dialog modal-dialog-centered modal-xl&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;form
+                id=&quot;form_empleados&quot;
+                class=&quot;needs-validation&quot;
+                action=&quot;crud_empleado.php&quot;
+                method=&quot;post&quot;
+                novalidate
+            &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;csrf_token&quot;
+                    value=&quot;b629b3e3045e4a1ee330172eba71534ad7acb208b54cdc9a6983f6645142252f&quot;
+                &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;pagina_actual&quot;
+                    value=&quot;1&quot;
+                &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;buscar_actual&quot;
+                    value=&quot;&quot;
+                &gt;
+                &lt;div class=&quot;modal-header&quot;&gt;
+                    &lt;div&gt;
+                        &lt;h2
+                            class=&quot;modal-title fs-5&quot;
+                            id=&quot;titulo_modal_empleados&quot;
+                        &gt;
+                            Nuevo empleado
+                        &lt;/h2&gt;
+                        &lt;small class=&quot;text-secondary&quot;&gt;
+                            Los campos marcados con * son obligatorios.
+                        &lt;/small&gt;
+                    &lt;/div&gt;
+                    &lt;button
+                        type=&quot;button&quot;
+                        class=&quot;btn-close&quot;
+                        data-bs-dismiss=&quot;modal&quot;
+                        aria-label=&quot;Cerrar&quot;
+                    &gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-body&quot;&gt;
+                    &lt;div class=&quot;row g-3&quot;&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label for=&quot;txt_id&quot; class=&quot;form-label&quot;&gt;
+                                ID
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;number&quot;
+                                name=&quot;txt_id&quot;
+                                id=&quot;txt_id&quot;
+                                class=&quot;form-control&quot;
+                                value=&quot;0&quot;
+                                readonly
+                            &gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_codigo&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Código
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_codigo&quot;
+                                id=&quot;txt_codigo&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: E001&quot;
+                                maxlength=&quot;10&quot;
+                                pattern=&quot;[A-Za-z0-9-]{2,10}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Código válido.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese un código de 2 a 10 caracteres usando letras, números o guiones.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_nombres&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Nombres
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_nombres&quot;
+                                id=&quot;txt_nombres&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: Ana Lucía&quot;
+                                maxlength=&quot;60&quot;
+                                minlength=&quot;2&quot;
+                                pattern=&quot;[A-Za-zÁÉÍÓÚÜÑáéíóúüñ&#39;\-\s]{2,60}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Nombres válidos.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese solamente letras y espacios para los nombres.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_apellidos&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Apellidos
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_apellidos&quot;
+                                id=&quot;txt_apellidos&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: López Pérez&quot;
+                                maxlength=&quot;60&quot;
+                                minlength=&quot;2&quot;
+                                pattern=&quot;[A-Za-zÁÉÍÓÚÜÑáéíóúüñ&#39;\-\s]{2,60}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Apellidos válidos.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese solamente letras y espacios para los apellidos.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_direccion&quot;
+                                class=&quot;form-label&quot;
+                            &gt;
+                                Dirección
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_direccion&quot;
+                                id=&quot;txt_direccion&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: Zona 1, Ciudad&quot;
+                                maxlength=&quot;100&quot;
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Dirección válida.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Revise la dirección ingresada.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_telefono&quot;
+                                class=&quot;form-label&quot;
+                            &gt;
+                                Teléfono
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;tel&quot;
+                                name=&quot;txt_telefono&quot;
+                                id=&quot;txt_telefono&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: 55551234&quot;
+                                maxlength=&quot;8&quot;
+                                minlength=&quot;8&quot;
+                                pattern=&quot;[0-9]{8}&quot;
+                                inputmode=&quot;numeric&quot;
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Teléfono válido.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese un número de teléfono de 8 dígitos.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_fn&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Fecha de nacimiento
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;date&quot;
+                                name=&quot;txt_fn&quot;
+                                id=&quot;txt_fn&quot;
+                                class=&quot;form-control&quot;
+                                max=&quot;2026-08-18&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Fecha válida.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Seleccione una fecha de nacimiento válida (no puede ser futura).
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;label
+                                for=&quot;drop_puesto&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Puesto
+                            &lt;/label&gt;
+                            &lt;select
+                                class=&quot;form-select&quot;
+                                name=&quot;drop_puesto&quot;
+                                id=&quot;drop_puesto&quot;
+                                required
+                            &gt;
+                                &lt;option value=&quot;&quot; selected disabled&gt;
+                                    Seleccione un puesto
+                                &lt;/option&gt;
+                                                                &lt;option value=&quot;2&quot;&gt;
+                                    Analista                                &lt;/option&gt;
+                                                                &lt;option value=&quot;3&quot;&gt;
+                                    Calidad                                &lt;/option&gt;
+                                                                &lt;option value=&quot;1&quot;&gt;
+                                    Programador                                &lt;/option&gt;
+                                                            &lt;/select&gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Puesto seleccionado.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Seleccione un puesto válido.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-footer&quot;&gt;
+                    &lt;button
+                        type=&quot;button&quot;
+                        class=&quot;btn btn-outline-secondary&quot;
+                        data-bs-dismiss=&quot;modal&quot;
+                    &gt;
+                        Cancelar
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_eliminar&quot;
+                        id=&quot;btn_eliminar&quot;
+                        class=&quot;btn btn-danger d-none&quot;
+                        formnovalidate
+                    &gt;
+                        Eliminar
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_modificar&quot;
+                        id=&quot;btn_modificar&quot;
+                        class=&quot;btn btn-success d-none&quot;
+                    &gt;
+                        Guardar cambios
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_agregar&quot;
+                        id=&quot;btn_agregar&quot;
+                        class=&quot;btn btn-primary&quot;
+                    &gt;
+                        Agregar empleado
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script
+    src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js&quot;
+    integrity=&quot;sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL&quot;
+    crossorigin=&quot;anonymous&quot;
+&gt;&lt;/script&gt;
+&lt;script&gt;
+&quot;use strict&quot;;
+
+const modalElemento = document.getElementById(&quot;modal_empleados&quot;);
+const modalEmpleados = new bootstrap.Modal(modalElemento);
+const formulario = document.getElementById(&quot;form_empleados&quot;);
+const tituloModal = document.getElementById(&quot;titulo_modal_empleados&quot;);
+const btnNuevo = document.getElementById(&quot;btn_nuevo&quot;);
+const btnAgregar = document.getElementById(&quot;btn_agregar&quot;);
+const btnModificar = document.getElementById(&quot;btn_modificar&quot;);
+const btnEliminar = document.getElementById(&quot;btn_eliminar&quot;);
+const tablaEmpleados = document.getElementById(&quot;tbl_empleados&quot;);
+
+function prepararNuevoEmpleado() {
+    formulario.reset();
+    formulario.classList.remove(&quot;was-validated&quot;);
+    document.getElementById(&quot;txt_id&quot;).value = 0;
+    tituloModal.textContent = &quot;Nuevo empleado&quot;;
+    btnAgregar.classList.remove(&quot;d-none&quot;);
+    btnModificar.classList.add(&quot;d-none&quot;);
+    btnEliminar.classList.add(&quot;d-none&quot;);
+    modalEmpleados.show();
+}
+
+function prepararEdicionEmpleado(fila) {
+    formulario.classList.remove(&quot;was-validated&quot;);
+    document.getElementById(&quot;txt_id&quot;).value = fila.dataset.id;
+    document.getElementById(&quot;txt_codigo&quot;).value = fila.dataset.codigo;
+    document.getElementById(&quot;txt_nombres&quot;).value = fila.dataset.nombres;
+    document.getElementById(&quot;txt_apellidos&quot;).value = fila.dataset.apellidos;
+    document.getElementById(&quot;txt_direccion&quot;).value = fila.dataset.direccion;
+    document.getElementById(&quot;txt_telefono&quot;).value = fila.dataset.telefono;
+    document.getElementById(&quot;txt_fn&quot;).value = fila.dataset.nacimiento;
+    document.getElementById(&quot;drop_puesto&quot;).value = fila.dataset.idPuesto;
+    tituloModal.textContent = &quot;Editar empleado&quot;;
+    btnAgregar.classList.add(&quot;d-none&quot;);
+    btnModificar.classList.remove(&quot;d-none&quot;);
+    btnEliminar.classList.remove(&quot;d-none&quot;);
+    modalEmpleados.show();
+}
+
+btnNuevo.addEventListener(&quot;click&quot;, prepararNuevoEmpleado);
+
+tablaEmpleados.addEventListener(&quot;click&quot;, function (evento) {
+    const fila = evento.target.closest(&quot;tr[data-id]&quot;);
+    if (fila) {
+        prepararEdicionEmpleado(fila);
+    }
+});
+
+formulario.addEventListener(&quot;submit&quot;, function (evento) {
+    const botonPresionado = evento.submitter;
+
+    /*
+     * La eliminación solamente necesita un ID válido.
+     * Los demás campos no se validan para esta operación.
+     */
+    if (
+        botonPresionado &amp;&amp;
+        botonPresionado.name === &quot;btn_eliminar&quot;
+    ) {
+        return;
+    }
+
+    if (!formulario.checkValidity()) {
+        evento.preventDefault();
+        evento.stopPropagation();
+    }
+
+    formulario.classList.add(&quot;was-validated&quot;);
+});
+
+btnEliminar.addEventListener(&quot;click&quot;, function (evento) {
+    const confirmar = window.confirm(
+        &quot;¿Está seguro de que desea eliminar este empleado?&quot;
+    );
+    if (!confirmar) {
+        evento.preventDefault();
+    }
+});
+
+modalElemento.addEventListener(&quot;shown.bs.modal&quot;, function () {
+    document.getElementById(&quot;txt_codigo&quot;).focus();
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baja</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Atributo de elemento HTML controlable por el usuario (XSS potencial)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/php_empresa-main/index.php?pagina=1</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A05_2025-Injection/">OWASP_2025_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Esta comprobación examina la entrada proporcionada por el usuario en parámetros de cadenas de consulta y datos POST para identificar dónde podrían estar controlados ciertos valores de atributos HTML. Esto proporciona detección de puntos calientes para XSS (cross-site scripting) que requerirán una revisión adicional por parte de un analista de seguridad para determinar la explotabilidad.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Se han encontrado valores de atributos HTML controlados por el usuario. Intente inyectar caracteres especiales para ver si es posible XSS. La página en la siguiente URL parece incluir una entrada de usuario en una etiqueta [meta] atributo [content] La entrada de usuario encontrada era:pagina=1 El valor controlado por el usuario era:width=device-width, initial-scale=1.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (363 bytes)</summary>
+				
+				<pre><code>GET http://localhost/php_empresa-main/index.php?pagina=1 HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/php_empresa-main/index.php?pagina=2
+Cookie: PHPSESSID=f8o0hv9fmn3ssbm04015gasnrd
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (591 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 18 Aug 2026 00:18:58 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.jsdelivr.net; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; frame-ancestors &#39;self&#39;;
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+content-length: 28412
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (28412 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, initial-scale=1&quot;
+&gt;
+&lt;title&gt;Gestión de empleados&lt;/title&gt;
+&lt;link
+    href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot;
+    rel=&quot;stylesheet&quot;
+    integrity=&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN&quot;
+    crossorigin=&quot;anonymous&quot;
+&gt;
+&lt;style&gt;
+body {
+    background-color: #f4f6f9;
+}
+.page-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+.card {
+    border: 0;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+}
+.table tbody tr {
+    cursor: pointer;
+}
+.table tbody tr:hover {
+    background-color: #eef4ff;
+}
+.required::after {
+    content: &quot; *&quot;;
+    color: #dc3545;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header class=&quot;page-header py-4 mb-4&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3&quot;&gt;
+            &lt;div&gt;
+                &lt;h1 class=&quot;h3 mb-1&quot;&gt;Gestión de empleados&lt;/h1&gt;
+                &lt;p class=&quot;text-secondary mb-0&quot;&gt;
+                    Agregue, modifique o elimine registros de empleados.
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;button
+                type=&quot;button&quot;
+                id=&quot;btn_nuevo&quot;
+                class=&quot;btn btn-primary&quot;
+            &gt;
+                Nuevo empleado
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+&lt;main class=&quot;container pb-5&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header bg-white py-3&quot;&gt;
+            &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2&quot;&gt;
+                &lt;h2 class=&quot;h5 mb-0&quot;&gt;Listado de empleados&lt;/h2&gt;
+                &lt;form
+                    class=&quot;d-flex&quot;
+                    method=&quot;get&quot;
+                    action=&quot;index.php&quot;
+                    role=&quot;search&quot;
+                &gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;pagina&quot; value=&quot;1&quot;&gt;
+                    &lt;input
+                        type=&quot;search&quot;
+                        name=&quot;buscar&quot;
+                        id=&quot;txt_buscar&quot;
+                        class=&quot;form-control&quot;
+                        style=&quot;max-width: 320px;&quot;
+                        placeholder=&quot;Buscar empleado...&quot;
+                        aria-label=&quot;Buscar empleado&quot;
+                        value=&quot;&quot;
+                    &gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-outline-secondary ms-2&quot;&gt;
+                        Buscar
+                    &lt;/button&gt;
+                                    &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body p-0&quot;&gt;
+            &lt;div class=&quot;table-responsive&quot;&gt;
+                &lt;table class=&quot;table table-hover align-middle mb-0&quot;&gt;
+                    &lt;thead class=&quot;table-dark&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Código&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Nombres&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Apellidos&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Dirección&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Teléfono&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Nacimiento&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Puesto&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Creado&lt;/th&gt;
+                            &lt;th scope=&quot;col&quot;&gt;Modificado&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody id=&quot;tbl_empleados&quot;&gt;
+                                                                                &lt;tr
+                                data-id=&quot;11&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;22&quot;
+                                data-nombres=&quot;pruebaJ&quot;
+                                data-apellidos=&quot;pruebaJ&quot;
+                                data-direccion=&quot;ultima prueba de paginacion&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2009-11-12&quot;
+                            &gt;
+                                &lt;td&gt;22&lt;/td&gt;
+                                &lt;td&gt;pruebaJ&lt;/td&gt;
+                                &lt;td&gt;pruebaJ&lt;/td&gt;
+                                &lt;td&gt;ultima prueba de paginacion&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2009-11-12&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:25&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:25&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;10&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;21&quot;
+                                data-nombres=&quot;pruebaI&quot;
+                                data-apellidos=&quot;pruebaI&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-07-17&quot;
+                            &gt;
+                                &lt;td&gt;21&lt;/td&gt;
+                                &lt;td&gt;pruebaI&lt;/td&gt;
+                                &lt;td&gt;pruebaI&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-07-17&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;9&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;20&quot;
+                                data-nombres=&quot;pruebaH&quot;
+                                data-apellidos=&quot;pruebaH&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-04-10&quot;
+                            &gt;
+                                &lt;td&gt;20&lt;/td&gt;
+                                &lt;td&gt;pruebaH&lt;/td&gt;
+                                &lt;td&gt;pruebaH&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-04-10&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:24&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;8&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;19&quot;
+                                data-nombres=&quot;pruebaG&quot;
+                                data-apellidos=&quot;pruebaG&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-05-15&quot;
+                            &gt;
+                                &lt;td&gt;19&lt;/td&gt;
+                                &lt;td&gt;pruebaG&lt;/td&gt;
+                                &lt;td&gt;pruebaG&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-05-15&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;7&quot;
+                                data-id-puesto=&quot;3&quot;
+                                data-codigo=&quot;18&quot;
+                                data-nombres=&quot;PruebaF&quot;
+                                data-apellidos=&quot;PruebaF&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-06-11&quot;
+                            &gt;
+                                &lt;td&gt;18&lt;/td&gt;
+                                &lt;td&gt;PruebaF&lt;/td&gt;
+                                &lt;td&gt;PruebaF&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-06-11&lt;/td&gt;
+                                &lt;td&gt;Calidad&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:23&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;6&quot;
+                                data-id-puesto=&quot;3&quot;
+                                data-codigo=&quot;17&quot;
+                                data-nombres=&quot;pruebaE&quot;
+                                data-apellidos=&quot;pruebaE&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-06-19&quot;
+                            &gt;
+                                &lt;td&gt;17&lt;/td&gt;
+                                &lt;td&gt;pruebaE&lt;/td&gt;
+                                &lt;td&gt;pruebaE&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-06-19&lt;/td&gt;
+                                &lt;td&gt;Calidad&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;5&quot;
+                                data-id-puesto=&quot;1&quot;
+                                data-codigo=&quot;16&quot;
+                                data-nombres=&quot;pruebaD&quot;
+                                data-apellidos=&quot;pruebaD&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-07-10&quot;
+                            &gt;
+                                &lt;td&gt;16&lt;/td&gt;
+                                &lt;td&gt;pruebaD&lt;/td&gt;
+                                &lt;td&gt;pruebaD&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-07-10&lt;/td&gt;
+                                &lt;td&gt;Programador&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:22&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                        &lt;tr
+                                data-id=&quot;4&quot;
+                                data-id-puesto=&quot;2&quot;
+                                data-codigo=&quot;15&quot;
+                                data-nombres=&quot;pruebaC&quot;
+                                data-apellidos=&quot;pruebaC&quot;
+                                data-direccion=&quot;n/a&quot;
+                                data-telefono=&quot;12345678&quot;
+                                data-nacimiento=&quot;2026-08-03&quot;
+                            &gt;
+                                &lt;td&gt;15&lt;/td&gt;
+                                &lt;td&gt;pruebaC&lt;/td&gt;
+                                &lt;td&gt;pruebaC&lt;/td&gt;
+                                &lt;td&gt;n/a&lt;/td&gt;
+                                &lt;td&gt;12345678&lt;/td&gt;
+                                &lt;td&gt;2026-08-03&lt;/td&gt;
+                                &lt;td&gt;Analista&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:21&lt;/td&gt;
+                                &lt;td&gt;09/08/2026 04:21&lt;/td&gt;
+                            &lt;/tr&gt;
+                                                                        &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-footer bg-white&quot;&gt;
+            &lt;div class=&quot;d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2&quot;&gt;
+                &lt;div class=&quot;text-secondary small&quot;&gt;
+                    Seleccione una fila para modificar o eliminar un empleado.
+                    Total de registros: &lt;strong&gt;11&lt;/strong&gt;
+                &lt;/div&gt;
+                &lt;nav aria-label=&quot;Paginación de empleados&quot;&gt;
+                    &lt;ul class=&quot;pagination pagination-sm mb-0&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a
+                                class=&quot;page-link&quot;
+                                href=&quot;index.php?pagina=0&quot;
+                            &gt;
+                                Anterior
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;span class=&quot;page-link&quot;&gt;
+                                Página 1 de 2                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item &quot;&gt;
+                            &lt;a
+                                class=&quot;page-link&quot;
+                                href=&quot;index.php?pagina=2&quot;
+                            &gt;
+                                Siguiente
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+
+&lt;div
+    class=&quot;modal fade&quot;
+    id=&quot;modal_empleados&quot;
+    tabindex=&quot;-1&quot;
+    aria-labelledby=&quot;titulo_modal_empleados&quot;
+    aria-hidden=&quot;true&quot;
+&gt;
+    &lt;div class=&quot;modal-dialog modal-dialog-centered modal-xl&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;form
+                id=&quot;form_empleados&quot;
+                class=&quot;needs-validation&quot;
+                action=&quot;crud_empleado.php&quot;
+                method=&quot;post&quot;
+                novalidate
+            &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;csrf_token&quot;
+                    value=&quot;f31c552ef20a6774db856d829d197c0c4435db0ae160fcb1b7e8af2b3d39182c&quot;
+                &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;pagina_actual&quot;
+                    value=&quot;1&quot;
+                &gt;
+                &lt;input
+                    type=&quot;hidden&quot;
+                    name=&quot;buscar_actual&quot;
+                    value=&quot;&quot;
+                &gt;
+                &lt;div class=&quot;modal-header&quot;&gt;
+                    &lt;div&gt;
+                        &lt;h2
+                            class=&quot;modal-title fs-5&quot;
+                            id=&quot;titulo_modal_empleados&quot;
+                        &gt;
+                            Nuevo empleado
+                        &lt;/h2&gt;
+                        &lt;small class=&quot;text-secondary&quot;&gt;
+                            Los campos marcados con * son obligatorios.
+                        &lt;/small&gt;
+                    &lt;/div&gt;
+                    &lt;button
+                        type=&quot;button&quot;
+                        class=&quot;btn-close&quot;
+                        data-bs-dismiss=&quot;modal&quot;
+                        aria-label=&quot;Cerrar&quot;
+                    &gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-body&quot;&gt;
+                    &lt;div class=&quot;row g-3&quot;&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label for=&quot;txt_id&quot; class=&quot;form-label&quot;&gt;
+                                ID
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;number&quot;
+                                name=&quot;txt_id&quot;
+                                id=&quot;txt_id&quot;
+                                class=&quot;form-control&quot;
+                                value=&quot;0&quot;
+                                readonly
+                            &gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_codigo&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Código
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_codigo&quot;
+                                id=&quot;txt_codigo&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: E001&quot;
+                                maxlength=&quot;10&quot;
+                                pattern=&quot;[A-Za-z0-9-]{2,10}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Código válido.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese un código de 2 a 10 caracteres usando letras, números o guiones.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_nombres&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Nombres
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_nombres&quot;
+                                id=&quot;txt_nombres&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: Ana Lucía&quot;
+                                maxlength=&quot;60&quot;
+                                minlength=&quot;2&quot;
+                                pattern=&quot;[A-Za-zÁÉÍÓÚÜÑáéíóúüñ&#39;\-\s]{2,60}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Nombres válidos.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese solamente letras y espacios para los nombres.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_apellidos&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Apellidos
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_apellidos&quot;
+                                id=&quot;txt_apellidos&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: López Pérez&quot;
+                                maxlength=&quot;60&quot;
+                                minlength=&quot;2&quot;
+                                pattern=&quot;[A-Za-zÁÉÍÓÚÜÑáéíóúüñ&#39;\-\s]{2,60}&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Apellidos válidos.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese solamente letras y espacios para los apellidos.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_direccion&quot;
+                                class=&quot;form-label&quot;
+                            &gt;
+                                Dirección
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;text&quot;
+                                name=&quot;txt_direccion&quot;
+                                id=&quot;txt_direccion&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: Zona 1, Ciudad&quot;
+                                maxlength=&quot;100&quot;
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Dirección válida.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Revise la dirección ingresada.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_telefono&quot;
+                                class=&quot;form-label&quot;
+                            &gt;
+                                Teléfono
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;tel&quot;
+                                name=&quot;txt_telefono&quot;
+                                id=&quot;txt_telefono&quot;
+                                class=&quot;form-control&quot;
+                                placeholder=&quot;Ejemplo: 55551234&quot;
+                                maxlength=&quot;8&quot;
+                                minlength=&quot;8&quot;
+                                pattern=&quot;[0-9]{8}&quot;
+                                inputmode=&quot;numeric&quot;
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Teléfono válido.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Ingrese un número de teléfono de 8 dígitos.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;label
+                                for=&quot;txt_fn&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Fecha de nacimiento
+                            &lt;/label&gt;
+                            &lt;input
+                                type=&quot;date&quot;
+                                name=&quot;txt_fn&quot;
+                                id=&quot;txt_fn&quot;
+                                class=&quot;form-control&quot;
+                                max=&quot;2026-08-18&quot;
+                                required
+                            &gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Fecha válida.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Seleccione una fecha de nacimiento válida (no puede ser futura).
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-6&quot;&gt;
+                            &lt;label
+                                for=&quot;drop_puesto&quot;
+                                class=&quot;form-label required&quot;
+                            &gt;
+                                Puesto
+                            &lt;/label&gt;
+                            &lt;select
+                                class=&quot;form-select&quot;
+                                name=&quot;drop_puesto&quot;
+                                id=&quot;drop_puesto&quot;
+                                required
+                            &gt;
+                                &lt;option value=&quot;&quot; selected disabled&gt;
+                                    Seleccione un puesto
+                                &lt;/option&gt;
+                                                                &lt;option value=&quot;2&quot;&gt;
+                                    Analista                                &lt;/option&gt;
+                                                                &lt;option value=&quot;3&quot;&gt;
+                                    Calidad                                &lt;/option&gt;
+                                                                &lt;option value=&quot;1&quot;&gt;
+                                    Programador                                &lt;/option&gt;
+                                                            &lt;/select&gt;
+                            &lt;div class=&quot;valid-feedback&quot;&gt;
+                                Puesto seleccionado.
+                            &lt;/div&gt;
+                            &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                Seleccione un puesto válido.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-footer&quot;&gt;
+                    &lt;button
+                        type=&quot;button&quot;
+                        class=&quot;btn btn-outline-secondary&quot;
+                        data-bs-dismiss=&quot;modal&quot;
+                    &gt;
+                        Cancelar
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_eliminar&quot;
+                        id=&quot;btn_eliminar&quot;
+                        class=&quot;btn btn-danger d-none&quot;
+                        formnovalidate
+                    &gt;
+                        Eliminar
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_modificar&quot;
+                        id=&quot;btn_modificar&quot;
+                        class=&quot;btn btn-success d-none&quot;
+                    &gt;
+                        Guardar cambios
+                    &lt;/button&gt;
+                    &lt;button
+                        type=&quot;submit&quot;
+                        name=&quot;btn_agregar&quot;
+                        id=&quot;btn_agregar&quot;
+                        class=&quot;btn btn-primary&quot;
+                    &gt;
+                        Agregar empleado
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script
+    src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js&quot;
+    integrity=&quot;sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL&quot;
+    crossorigin=&quot;anonymous&quot;
+&gt;&lt;/script&gt;
+&lt;script&gt;
+&quot;use strict&quot;;
+
+const modalElemento = document.getElementById(&quot;modal_empleados&quot;);
+const modalEmpleados = new bootstrap.Modal(modalElemento);
+const formulario = document.getElementById(&quot;form_empleados&quot;);
+const tituloModal = document.getElementById(&quot;titulo_modal_empleados&quot;);
+const btnNuevo = document.getElementById(&quot;btn_nuevo&quot;);
+const btnAgregar = document.getElementById(&quot;btn_agregar&quot;);
+const btnModificar = document.getElementById(&quot;btn_modificar&quot;);
+const btnEliminar = document.getElementById(&quot;btn_eliminar&quot;);
+const tablaEmpleados = document.getElementById(&quot;tbl_empleados&quot;);
+
+function prepararNuevoEmpleado() {
+    formulario.reset();
+    formulario.classList.remove(&quot;was-validated&quot;);
+    document.getElementById(&quot;txt_id&quot;).value = 0;
+    tituloModal.textContent = &quot;Nuevo empleado&quot;;
+    btnAgregar.classList.remove(&quot;d-none&quot;);
+    btnModificar.classList.add(&quot;d-none&quot;);
+    btnEliminar.classList.add(&quot;d-none&quot;);
+    modalEmpleados.show();
+}
+
+function prepararEdicionEmpleado(fila) {
+    formulario.classList.remove(&quot;was-validated&quot;);
+    document.getElementById(&quot;txt_id&quot;).value = fila.dataset.id;
+    document.getElementById(&quot;txt_codigo&quot;).value = fila.dataset.codigo;
+    document.getElementById(&quot;txt_nombres&quot;).value = fila.dataset.nombres;
+    document.getElementById(&quot;txt_apellidos&quot;).value = fila.dataset.apellidos;
+    document.getElementById(&quot;txt_direccion&quot;).value = fila.dataset.direccion;
+    document.getElementById(&quot;txt_telefono&quot;).value = fila.dataset.telefono;
+    document.getElementById(&quot;txt_fn&quot;).value = fila.dataset.nacimiento;
+    document.getElementById(&quot;drop_puesto&quot;).value = fila.dataset.idPuesto;
+    tituloModal.textContent = &quot;Editar empleado&quot;;
+    btnAgregar.classList.add(&quot;d-none&quot;);
+    btnModificar.classList.remove(&quot;d-none&quot;);
+    btnEliminar.classList.remove(&quot;d-none&quot;);
+    modalEmpleados.show();
+}
+
+btnNuevo.addEventListener(&quot;click&quot;, prepararNuevoEmpleado);
+
+tablaEmpleados.addEventListener(&quot;click&quot;, function (evento) {
+    const fila = evento.target.closest(&quot;tr[data-id]&quot;);
+    if (fila) {
+        prepararEdicionEmpleado(fila);
+    }
+});
+
+formulario.addEventListener(&quot;submit&quot;, function (evento) {
+    const botonPresionado = evento.submitter;
+
+    /*
+     * La eliminación solamente necesita un ID válido.
+     * Los demás campos no se validan para esta operación.
+     */
+    if (
+        botonPresionado &amp;&amp;
+        botonPresionado.name === &quot;btn_eliminar&quot;
+    ) {
+        return;
+    }
+
+    if (!formulario.checkValidity()) {
+        evento.preventDefault();
+        evento.stopPropagation();
+    }
+
+    formulario.classList.add(&quot;was-validated&quot;);
+});
+
+btnEliminar.addEventListener(&quot;click&quot;, function (evento) {
+    const confirmar = window.confirm(
+        &quot;¿Está seguro de que desea eliminar este empleado?&quot;
+    );
+    if (!confirmar) {
+        evento.preventDefault();
+    }
+});
+
+modalElemento.addEventListener(&quot;shown.bs.modal&quot;, function () {
+    document.getElementById(&quot;txt_codigo&quot;).focus();
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>pagina</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Válida la entrada y sanea la salida antes de escribirla en cualquier atributo HTML.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Inyección SQL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40018/">Inyección SQL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>CSP: Failure to Define Directive with No Fallback</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10055/">CSP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+										<li><a
+											href="https://github.com/HtmlUnit/htmlunit-csp">https://github.com/HtmlUnit/htmlunit-csp</a></li>
+										<li><a
+											href="https://web.dev/articles/csp#resource-options">https://web.dev/articles/csp#resource-options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>CSP: script-src unsafe-inline</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10055/">CSP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+										<li><a
+											href="https://github.com/HtmlUnit/htmlunit-csp">https://github.com/HtmlUnit/htmlunit-csp</a></li>
+										<li><a
+											href="https://web.dev/articles/csp#resource-options">https://web.dev/articles/csp#resource-options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>CSP: style-src unsafe-inline</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10055/">CSP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+										<li><a
+											href="https://github.com/HtmlUnit/htmlunit-csp">https://github.com/HtmlUnit/htmlunit-csp</a></li>
+										<li><a
+											href="https://web.dev/articles/csp#resource-options">https://web.dev/articles/csp#resource-options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cabecera Content Security Policy (CSP) no configurada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Cabecera Content Security Policy (CSP) no configurada</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Atributo de elemento HTML controlable por el usuario (XSS potencial)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">Atributo de elemento HTML controlable por el usuario (XSS potencial)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Respuesta de Gestión de Sesión Identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Respuesta de Gestión de Sesión Identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
